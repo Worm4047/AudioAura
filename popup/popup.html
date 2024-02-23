@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudioAura</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../images/icon48.png"
+          alt="Icon"
+          style="height: 24px; vertical-align: middle"
+          class="popup-icon"
+        />
+        <!-- Icon -->
+        <h1 style="display: inline-block; vertical-align: middle">AudioAura</h1>
+      </div>
+
+      <div id="prompt" style="display: none"></div>
+
+      <div class="content">
+        <div class="input content-item">
+          <label for="volume">Volume Boost</label>
+          <input
+            type="range"
+            id="volume"
+            name="volume"
+            min="1"
+            max="5"
+            value="1"
+            class="clickable-item"
+            disabled
+          />
+          <span id="volume-value">0</span>
+          <button
+            id="reset-volume"
+            class="content-item clickable-item"
+            disabled
+          >
+            Reset
+          </button>
+        </div>
+
+        <div class="input content-item">
+          <label for="bass">Bass Boost</label>
+          <input
+            type="range"
+            id="bass"
+            name="bass"
+            min="0"
+            max="5"
+            value="0"
+            disabled
+            class="clickable-item"
+          />
+          <span id="bass-value">0</span>
+          <button id="reset-bass" class="content-item clickable-item" disabled>
+            Reset
+          </button>
+        </div>
+        <div class="input content-item">
+          <label for="treble-boost">Treble Boost</label>
+          <input
+            type="range"
+            id="treble"
+            name="treble"
+            min="0"
+            max="5"
+            value="0"
+            disabled
+            class="clickable-item"
+          />
+          <span id="treble-value">0</span>
+          <button
+            id="reset-treble"
+            class="content-item clickable-item"
+            disabled
+          >
+            Reset
+          </button>
+        </div>
+
+        <div class="input content-item">
+          <label for="spatial audio">Spatial Audio</label>
+          <select
+            id="reverb-selection"
+            class="content-item clickable-item"
+            disabled
+          >
+            <option value="auditorium">Auditorium</option>
+            <option value="club" default>Club</option>
+            <option value="concertHall">Concert</option>
+            <option value="theater">Theater</option>
+          </select>
+          <button id="set-reverb" class="content-item clickable-item" disabled>
+            Set
+          </button>
+          <button
+            id="reset-reverb"
+            class="content-item clickable-item"
+            disabled
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

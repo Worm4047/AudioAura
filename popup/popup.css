@@ -1,0 +1,169 @@
+body {
+  background-color: #121212; /* Dark grey background */
+  color: #e0e0e0; /* Light grey text */
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  /* margin: 0;
+  padding: 0; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  margin: 0;
+  border: 1px solid #424242; /* Slightly darker border for contrast */
+  border-radius: 2px; /* Added border radius for rounded corners */
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-item {
+  padding: 10px 0;
+  margin: 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333; /* Darker border color for dark theme */
+}
+
+/* Updated button styles for dark theme compatibility */
+button.content-item {
+  background-color: #303f9f; /* Material Design Indigo 500 */
+  color: #fff; /* White text for contrast */
+  padding: 8px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+button.content-item:hover {
+  background-color: #283593; /* Material Design Indigo 700 for hover effect */
+}
+
+button.content-item:active {
+  background-color: #1a237e; /* Even darker shade for click effect */
+  transform: scale(
+    0.95
+  ); /* Slightly reduce the size to simulate a press effect */
+}
+
+button:disabled {
+  background-color: #424242; /* Grey color for disabled state */
+  color: #bdbdbd; /* Light grey text for disabled buttons */
+  cursor: not-allowed;
+}
+
+/* Styling select elements for dark theme */
+select.content-item {
+  background-color: white; /* Ensures background is white for readability */
+  border: 1px solid #ced4da; /* Light grey border for distinction */
+  padding: 8px 8px; /* Increased padding for better visibility of options */
+  font-size: 16px; /* Increased font size for readability */
+  color: #333; /* Dark color for text for better contrast */
+  cursor: pointer; /* Indicates the element is interactable */
+  display: block; /* Ensures the select takes the full width of its container */
+  width: 130px; /* Adjust width to account for padding */
+  min-height: 30px; /* Ensure select is not too small */
+  border-radius: 4px; /* Rounded corners for aesthetics */
+  margin-bottom: 20px; /* Space below the select */
+}
+
+/* Dark theme adjustments for labels and spans for better visibility */
+/* Label styling to match Material Design */
+label {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 8px;
+  display: block;
+  margin-right: 8px;
+  white-space: nowrap;
+  width: 100px;
+}
+
+span {
+  font-size: 18px;
+  font-weight: normal;
+  color: orange;
+  margin: 10px;
+}
+
+/* Styling for #prompt to fit the dark theme */
+#prompt {
+  background-color: #333333; /* Darker grey background */
+  color: #e0e0e0; /* Light grey text */
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #424242; /* Slightly darker border */
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+/* Ensure inputs match the dark theme aesthetic */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="url"],
+input[type="range"],
+input[type="checkbox"],
+textarea {
+  background-color: #424242; /* Dark grey background */
+  color: #ffffff; /* White text */
+  border: 1px solid #616161; /* Grey border */
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 20px; /* Adjust width to match the dark theme */
+  height: 20px; /* Adjust height to match the dark theme */
+  margin-right: 10px; /* Add space between the checkbox and the label */
+}
+
+input[type="range"] {
+  padding: 0;
+}
+
+input:disabled,
+select:disabled {
+  opacity: 0.5; /* Slightly faded look for disabled inputs */
+  cursor: not-allowed;
+}
+
+/* Enhance focus state visibility on inputs */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #64b5f6; /* Light blue border for focus, improves visibility */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.4); /* Soft glow effect for focus */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-icon {
+  margin-right: 30px;
+  margin-left: 25px;
+}
+
+input[type="range"] {
+  width: 120px;
+}
